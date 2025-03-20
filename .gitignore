@@ -9,7 +9,6 @@ my_venv/
 venv/
 
 # Ignore local database
-db.sqlite3
 *.sqlite3
 
 # Static & Media Files (Handled via AWS S3 or collectstatic)
