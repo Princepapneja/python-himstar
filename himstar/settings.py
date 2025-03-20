@@ -154,12 +154,16 @@ USE_I18N = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
+# STATIC_ROOT = '/python-himstar/staticfiles'
 STATIC_URL = '/static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_ROOT = '/python-himstar/staticfiles'
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+# Directory where static files will be collected for production (by collectstatic)
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # This is where static files will be stored after collectstatic
 
+# Additional static directories to look in during development (not needed in production)
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),  # Path to your project's 'static' directory
+]
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Absolute path to media folder
 MEDIA_URL = '/media/'
 
