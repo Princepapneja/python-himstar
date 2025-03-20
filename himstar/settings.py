@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-l)8p-)k^)6bn&5+@o9=)lfvltck6sm!3-u&q+32uw*v78hq*)g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -154,16 +154,10 @@ USE_I18N = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
-# STATIC_ROOT = '/python-himstar/staticfiles'
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
-# Directory where static files will be collected for production (by collectstatic)
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # This is where static files will be stored after collectstatic
-
-# Additional static directories to look in during development (not needed in production)
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),  # Path to your project's 'static' directory
-]
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Absolute path to media folder
 MEDIA_URL = '/media/'
 
