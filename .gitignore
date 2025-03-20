@@ -16,8 +16,6 @@ static/
 media/
 
 # Ignore local environment variables
-.env
-.env.*
 
 # Django migrations cache
 **/migrations/*.pyc
