@@ -12,8 +12,8 @@ venv/
 *.sqlite3
 
 # Static & Media Files (Handled via AWS S3 or collectstatic)
-static/
-media/
+# static/
+# media/
 
 # Ignore local environment variables
 
