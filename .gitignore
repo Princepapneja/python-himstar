@@ -18,8 +18,7 @@ media/
 # Ignore local environment variables
 
 # Django migrations cache
-**/migrations/*.pyc
-**/migrations/*.py
+
 
 # Logs and temp files
 logs/
