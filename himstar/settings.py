@@ -155,8 +155,10 @@ USE_I18N = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = "/home/ubuntu/python-himstar/static/"
+
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Absolute path to media folder
 MEDIA_URL = '/media/'
